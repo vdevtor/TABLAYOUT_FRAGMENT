@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Exercicio2310</string>
+    <string name="nao_socio">Não Socio</string>
+    <string name="socio">Socio</string>
+    <string name="cadastrar">CADASTRAR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="teste">Não Socio</string>
+    <string name="socio_teste">Socio</string>
+    <string name="name_completo">Nome</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="contato_telefone">Telefone</string>
+    <string name="senha">Senha</string>
+    <string name="confirmar_senha">Confirmar Senha</string>
+    <string name="cadastrar_btn">Cadastrar</string>
+    <string name="campo_obrigatorio">Campo %1$s está em branco</string>
+</resources>

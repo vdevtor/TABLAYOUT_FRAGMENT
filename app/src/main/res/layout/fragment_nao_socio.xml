@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".SocioFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="@string/name_completo"
+            app:layout_constraintBottom_toTopOf="@id/tilEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tnome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/e_mail"
+
+            app:layout_constraintEnd_toEndOf="@id/tilName"
+            app:layout_constraintStart_toStartOf="@id/tilName"
+            app:layout_constraintTop_toBottomOf="@id/tilName"
+            app:layout_constraintBottom_toTopOf="@id/tilTelefone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilTelefone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/contato_telefone"
+            app:layout_constraintBottom_toTopOf="@id/tilSenha"
+            app:layout_constraintEnd_toEndOf="@id/tilName"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@id/tilName"
+            app:layout_constraintTop_toBottomOf="@id/tilEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilSenha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/senha"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@id/tilName"
+            app:layout_constraintStart_toStartOf="@id/tilName"
+            app:layout_constraintTop_toBottomOf="@id/tilTelefone"
+            app:layout_constraintBottom_toTopOf="@id/tilConfirmaSenha">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilConfirmaSenha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/confirmar_senha"
+            app:layout_constraintEnd_toEndOf="@id/tilName"
+            app:layout_constraintStart_toStartOf="@id/tilName"
+            app:layout_constraintTop_toBottomOf="@id/tilSenha"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cadastra_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastrar_btn"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tilConfirmaSenha"
+            app:layout_constraintStart_toStartOf="@id/tilName"
+            app:layout_constraintEnd_toEndOf="@id/tilName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</ScrollView>
